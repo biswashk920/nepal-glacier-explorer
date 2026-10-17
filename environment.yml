@@ -1,0 +1,17 @@
+name: nepal-glaciers
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - geopandas>=0.14
+  - pyogrio
+  - rasterio
+  - shapely>=2
+  - pyproj
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - folium
+  - pyarrow
+  - ipykernel
