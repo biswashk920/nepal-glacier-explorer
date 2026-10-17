@@ -1,0 +1,16 @@
+,value
+n_glaciers,4480.0
+total_area_km2,4244.783
+mean_km2,0.947
+median_km2,0.231
+max_km2,84.504
+p10_km2,0.043
+p25_km2,0.088
+p75_km2,0.656
+p90_km2,1.793
+p99_km2,13.236
+pct_glaciers_below_1km2,82.589
+pct_area_in_glaciers_below_1km2,22.153
+area_weighted_median_km2,4.217
+n_largest_glaciers_for_50pct_area,172.0
+pct_area_in_10_largest,11.756
