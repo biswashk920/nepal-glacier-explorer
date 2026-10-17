@@ -6,8 +6,6 @@
 A reproducible analysis of the Randolph Glacier Inventory (RGI) 7.0, with an interactive web map.
 
 
-[![Interactive map screenshot](outputs/figures/webmap_screenshot.png)](https://biswashk920.github.io/nepal-glacier-explorer/)
-
 ---
 
 ## 1. Research question
