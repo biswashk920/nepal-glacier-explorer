@@ -1,0 +1,43 @@
+.proj-panel {
+  position: fixed; top: 56px; right: 12px; width: 620px;
+  max-width: calc(100vw - 24px); max-height: calc(100vh - 72px); overflow-y: auto;
+  z-index: 1200; background: #fff; color: #222; border-radius: 8px;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.3);
+  font: 14px/1.45 system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  padding: 14px 16px 16px;
+}
+.proj-panel.proj-wide { width: 1000px; }
+.proj-btn {
+  position: absolute; top: 8px; border: 0; background: none; cursor: pointer;
+  font-size: 22px; line-height: 1; color: #666; padding: 2px 6px;
+}
+.proj-close { right: 8px; }
+.proj-expand { right: 40px; }
+.proj-btn:hover { color: #000; }
+.proj-heading { font-weight: 600; font-size: 16px; padding-right: 80px; }
+.proj-id { color: #777; font-size: 12px; margin: 2px 0 8px; }
+.proj-toggle { display: block; margin: 0 0 4px; font-size: 13px; color: #444; cursor: pointer; }
+.proj-chart { margin: 4px 0 8px; }
+.proj-chartwrap { position: relative; }
+.proj-chartwrap svg { display: block; }
+.proj-tip {
+  position: absolute; top: 8px; right: 18px; background: rgba(255, 255, 255, 0.96);
+  border: 1px solid #ddd; border-radius: 4px; padding: 5px 8px; font-size: 12px;
+  pointer-events: none;
+}
+.proj-tip-year { font-weight: 600; color: #333; }
+.proj-row { display: flex; gap: 8px; align-items: flex-start; margin: 0 0 6px; cursor: pointer; }
+.proj-row input { margin-top: 4px; flex: none; }
+.proj-swatch { flex: none; width: 24px; height: 0; border-top: 3px solid; margin-top: 9px; }
+.proj-swatch.proj-dashed { border-top-style: dashed; }
+.proj-details { margin-top: 6px; }
+.proj-details summary { cursor: pointer; color: #555; margin: 0 0 6px; }
+.proj-warn { background: #fff4e0; border-left: 3px solid #f79420; padding: 6px 8px; margin: 8px 0; }
+.proj-note { color: #666; font-size: 12px; margin: 10px 0 0; }
+@media (max-width: 700px) {
+  .proj-panel, .proj-panel.proj-wide {
+    top: auto; bottom: 0; right: 0; left: 0; width: auto; max-width: none;
+    max-height: 65vh; border-radius: 12px 12px 0 0;
+  }
+  .proj-expand { display: none; }
+}
