@@ -34,10 +34,30 @@
 .proj-details summary { cursor: pointer; color: #555; margin: 0 0 6px; }
 .proj-warn { background: #fff4e0; border-left: 3px solid #f79420; padding: 6px 8px; margin: 8px 0; }
 .proj-note { color: #666; font-size: 12px; margin: 10px 0 0; }
+
+/* glacier view inside the details popup */
+.gv-root { width: 380px; margin-top: 10px; padding-top: 8px; border-top: 1px solid #ddd; }
+.gv-title { font-weight: 600; margin-bottom: 4px; }
+.gv-readout { margin-bottom: 6px; font-size: 13px; }
+.gv-year { font-size: 20px; font-weight: 700; }
+.gv-canvas { display: block; border-radius: 6px; border: 1px solid #d5dde5; }
+.gv-bar { display: flex; align-items: center; gap: 10px; margin: 8px 0 4px; }
+.gv-play {
+  flex: none; width: 36px; height: 30px; border: 1px solid #1f6f9f; background: #1f6f9f;
+  color: #fff; border-radius: 6px; cursor: pointer; font-size: 13px;
+}
+.gv-slider { flex: 1; }
+.gv-opts { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 10px; margin-top: 6px; }
+.gv-opt { display: flex; flex-direction: column; font-size: 11px; color: #555; }
+.gv-opt select { font-size: 12px; padding: 2px; margin-top: 2px; }
+.gv-note { color: #666; font-size: 11px; margin-top: 8px; }
+
 @media (max-width: 700px) {
   .proj-panel, .proj-panel.proj-wide {
     top: auto; bottom: 0; right: 0; left: 0; width: auto; max-width: none;
     max-height: 65vh; border-radius: 12px 12px 0 0;
   }
   .proj-expand { display: none; }
+  .gv-root { width: 300px; }
+  .gv-canvas { width: 300px !important; }
 }

@@ -1,6 +1,7 @@
 # Raw source downloads, including RGI 6 outlines and archives
 data/raw/
 data/processed/
+docs/data\proj
 .ipynb_checkpoints/
 __pycache__/
 *.zip
